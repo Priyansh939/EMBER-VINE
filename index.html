@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EMBER & VINE — Modern American Fine Dining · Chicago</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="c-dot" id="cDot"></div>
+<div class="c-ring" id="cRing"></div>
+
+<!-- ═══ NAV ═══════════════════════════════════════════════ -->
+<nav id="nav">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-mark">EMBER <span>&amp;</span> VINE</div>
+    <div class="nav-logo-sub">Modern American Fine Dining · Chicago</div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">Our Story</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#chef">Chef</a></li>
+    <li><a href="#experience">Experiences</a></li>
+    <li><a href="#careers">Careers</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#reserve" class="nav-cta">Reserve a Table</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mobNav">
+  <a href="#about"       onclick="closeMob()">Our Story</a>
+  <a href="#menu"        onclick="closeMob()">Menu</a>
+  <a href="#chef"        onclick="closeMob()">Chef</a>
+  <a href="#experience"  onclick="closeMob()">Experiences</a>
+  <a href="#careers"     onclick="closeMob()">Careers</a>
+  <a href="#reserve"     onclick="closeMob()">Reserve</a>
+  <a href="#contact"     onclick="closeMob()">Contact</a>
+</div>
+
+<!-- ═══ HERO ═══════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-left">
+    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&q=85" alt="Ember & Vine dining">
+  </div>
+  <div class="hero-right">
+    <div class="hero-eyebrow">Michelin-Recognized · River North, Chicago · Est. 2016</div>
+    <h1 class="hero-h1">Where<br><em>Fire</em> Meets<br><em>Flavor</em></h1>
+    <p class="hero-desc">A celebration of American ingredients kissed by open flame — refined, soulful, and utterly unforgettable.</p>
+    <div class="hero-btns">
+      <a href="#reserve" class="btn-ember">Reserve a Table &rarr;</a>
+      <a href="#menu"    class="btn-ghost">Explore Menu</a>
+    </div>
+    <div class="hero-badge">
+      <div class="badge-star">★</div>
+      <div class="badge-txt">Michelin<br>Guide<br>2024</div>
+    </div>
+  </div>
+  <div class="hero-info">
+    <div class="hinfo-item">
+      <div class="hinfo-label">Dinner Service</div>
+      <div class="hinfo-val">Tue – Sun, 5:30 PM</div>
+    </div>
+    <div class="hinfo-item">
+      <div class="hinfo-label">Dress Code</div>
+      <div class="hinfo-val">Smart Casual</div>
+    </div>
+    <div class="hinfo-item">
+      <div class="hinfo-label">Reservations</div>
+      <div class="hinfo-val">+1 (312) 555-0241</div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-bar" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Open-Flame Cooking</span>
+    <span class="marquee-item">Seasonal American Menu</span>
+    <span class="marquee-item">Michelin Recognized</span>
+    <span class="marquee-item">800+ Wine Selections</span>
+    <span class="marquee-item">Private Dining Available</span>
+    <span class="marquee-item">Chef's Table Experience</span>
+    <span class="marquee-item">Farm-to-Fire Philosophy</span>
+    <span class="marquee-item">Open-Flame Cooking</span>
+    <span class="marquee-item">Seasonal American Menu</span>
+    <span class="marquee-item">Michelin Recognized</span>
+    <span class="marquee-item">800+ Wine Selections</span>
+    <span class="marquee-item">Private Dining Available</span>
+    <span class="marquee-item">Chef's Table Experience</span>
+    <span class="marquee-item">Farm-to-Fire Philosophy</span>
+  </div>
+</div>
+
+<!-- ═══ ABOUT ════════════════════════════════════════════ -->
+<section id="about" class="section">
+  <div class="about-wrap">
+    <div class="about-imgs rev">
+      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=700&q=80" alt="Restaurant interior" class="about-main-img">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80" alt="Signature dish" class="about-float-img">
+      <div class="about-border-accent"></div>
+    </div>
+    <div>
+      <div class="eyebrow rev" style="--ember:var(--gold);">Our Philosophy</div>
+      <h2 class="h2-serif h2-serif-light rev rev-d1">A Story of <em>Passion</em><br>&amp; Provenance</h2>
+      <p class="body-para body-para-lt rev rev-d2">EMBER &amp; VINE was born from a singular obsession: the perfect marriage of fire-kissed American ingredients and refined culinary technique. Our kitchen celebrates the seasons, honors local farmers, and pushes the boundaries of modern American cuisine.</p>
+      <p class="body-para body-para-lt rev rev-d3" style="margin-top:1rem;">Every plate that leaves our pass is a conversation between tradition and imagination — rooted in the flavors of the Midwest, elevated by the creativity of our brigade.</p>
+      <div class="about-pills rev">
+        <span class="pill">Farm-to-Fire</span>
+        <span class="pill">Open Flame</span>
+        <span class="pill">Seasonal Menu</span>
+        <span class="pill">Local Sourcing</span>
+        <span class="pill">Craft Cocktails</span>
+        <span class="pill">Fine Dining</span>
+      </div>
+      <div class="about-numbers rev">
+        <div class="anum"><div class="anum-n">★</div><div class="anum-l">Michelin Star</div></div>
+        <div class="anum"><div class="anum-n">#4</div><div class="anum-l">Chicago Best</div></div>
+        <div class="anum"><div class="anum-n">98</div><div class="anum-l">Zagat Score</div></div>
+        <div class="anum"><div class="anum-n">8yr</div><div class="anum-l">Excellence</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MENU ══════════════════════════════════════════════ -->
+<section id="menu" class="section">
+  <div class="menu-head rev">
+    <div class="eyebrow" style="justify-content:center;">Seasonal Selections</div>
+    <h2 class="h2-serif" style="color:var(--ink);">The <em>Menu</em></h2>
+    <p class="menu-sub">All dishes sourced within 150 miles of our kitchen. Menu rotates with the seasons.</p>
+  </div>
+  <div class="tab-row rev">
+    <button class="tab-btn on" onclick="tab('starters',this)">Starters</button>
+    <button class="tab-btn"    onclick="tab('mains',this)">Mains</button>
+    <button class="tab-btn"    onclick="tab('desserts',this)">Desserts</button>
+    <button class="tab-btn"    onclick="tab('cellar',this)">The Cellar</button>
+  </div>
+
+  <!-- Starters -->
+  <div class="menu-pane on" id="pane-starters">
+    <div class="dish"><div class="dish-l"><div class="dish-name">Ember-Roasted Beet Carpaccio</div><div class="dish-desc">Golden &amp; candy-striped beets, whipped chèvre, toasted hazelnuts, aged balsamic, micro sorrel</div><div class="dish-tags"><span class="dish-tag">GF</span><span class="dish-tag">Vegetarian</span></div></div><div class="dish-price">$22</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">Wood-Fired Oysters</div><div class="dish-desc">Michigan oysters, cultured butter, smoked champagne mignonette, caviar pearls</div><div class="dish-tags"><span class="dish-tag">Signature</span></div></div><div class="dish-price">$34</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">Foie Gras Torchon</div><div class="dish-desc">Hudson Valley foie, sour cherry mostarda, brioche toast, elderflower gel</div><div class="dish-tags"><span class="dish-tag">Chef's Pick</span></div></div><div class="dish-price">$42</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">Chilled Dungeness Crab</div><div class="dish-desc">Avocado silk, cucumber water, lemon verbena oil, sesame tuile</div><div class="dish-tags"><span class="dish-tag">GF</span></div></div><div class="dish-price">$38</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">Venison Tartare</div><div class="dish-desc">Hand-cut venison loin, smoked yolk, pickled mustard seed, black truffle, rye crisps</div><div class="dish-tags"><span class="dish-tag">Seasonal</span></div></div><div class="dish-price">$36</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">Charred Leek Velouté</div><div class="dish-desc">Spring leek, potato cream, crispy prosciutto, chive oil, sourdough croutons</div><div class="dish-tags"><span class="dish-tag">Vegetarian</span></div></div><div class="dish-price">$18</div></div>
+  </div>
+
+  <!-- Mains -->
+  <div class="menu-pane" id="pane-mains">
+    <div class="dish"><div class="dish-l"><div class="dish-name">Dry-Aged Prime Ribeye</div><div class="dish-desc">45-day dry-aged beef, bone marrow butter, truffle jus, heirloom potato gratin</div><div class="dish-tags"><span class="dish-tag">GF</span><span class="dish-tag">Signature</span></div></div><div class="dish-price">$78</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">Seared Atlantic Halibut</div><div class="dish-desc">Wild-caught halibut, corn velouté, pickled ramps, smoked paprika oil, sea herbs</div><div class="dish-tags"><span class="dish-tag">GF</span><span class="dish-tag">Chef's Pick</span></div></div><div class="dish-price">$58</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">Roasted Duck Breast</div><div class="dish-desc">Maple Farm duck, cherry gastrique, charred scallion, wild rice, leg confit croquette</div><div class="dish-tags"><span class="dish-tag">Seasonal</span></div></div><div class="dish-price">$62</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">Black Truffle Risotto</div><div class="dish-desc">Carnaroli rice, Périgord truffle, parmesan foam, aged balsamic, crispy sage</div><div class="dish-tags"><span class="dish-tag">GF</span><span class="dish-tag">Vegetarian</span></div></div><div class="dish-price">$52</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">72-Hour Braised Short Rib</div><div class="dish-desc">Wagyu short rib, celery root purée, roasted root medley, red wine reduction</div><div class="dish-tags"><span class="dish-tag">GF</span></div></div><div class="dish-price">$68</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">Butter-Poached Lobster</div><div class="dish-desc">Maine lobster tail, sweet pea bisque, crispy leeks, chervil, lobster oil</div><div class="dish-tags"><span class="dish-tag">Signature</span></div></div><div class="dish-price">$82</div></div>
+  </div>
+
+  <!-- Desserts -->
+  <div class="menu-pane" id="pane-desserts">
+    <div class="dish"><div class="dish-l"><div class="dish-name">Valrhona Chocolate Sphere</div><div class="dish-desc">Warm caramel poured tableside, salted caramel, vanilla ice cream, hazelnut praline</div><div class="dish-tags"><span class="dish-tag">Signature</span></div></div><div class="dish-price">$22</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">Lemon Verbena Panna Cotta</div><div class="dish-desc">Silky panna cotta, seasonal berry compote, candied citrus, almond tuile</div><div class="dish-tags"><span class="dish-tag">GF</span><span class="dish-tag">Vegetarian</span></div></div><div class="dish-price">$18</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">Artisan Cheese Board</div><div class="dish-desc">5 American artisan cheeses, honeycomb, fruit preserve, walnut crisps, membrillo</div></div><div class="dish-price">$32</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">Ember Banana Tarte Tatin</div><div class="dish-desc">Caramelized banana, salted butter pastry, bourbon caramel, crème fraîche</div><div class="dish-tags"><span class="dish-tag">Chef's Pick</span></div></div><div class="dish-price">$19</div></div>
+  </div>
+
+  <!-- Cellar -->
+  <div class="menu-pane" id="pane-cellar">
+    <div class="dish"><div class="dish-l"><div class="dish-name">Ember Negroni</div><div class="dish-desc">Mezcal, sweet vermouth, Campari, activated charcoal ice sphere, smoked orange</div><div class="dish-tags"><span class="dish-tag">Signature Cocktail</span></div></div><div class="dish-price">$22</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">Vine &amp; Bitters</div><div class="dish-desc">Bourbon, honey-ginger syrup, Angostura, lemon, fresh thyme air</div></div><div class="dish-price">$20</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">Domaine Leflaive Puligny-Montrachet</div><div class="dish-desc">Burgundy, France — mineral-driven Chardonnay with exceptional length and purity</div><div class="dish-tags"><span class="dish-tag">Sommelier's Pick</span></div></div><div class="dish-price">$195</div></div>
+    <div class="dish"><div class="dish-l"><div class="dish-name">Opus One 2019</div><div class="dish-desc">Napa Valley — Cabernet-led Bordeaux blend. Rich, structured, and elegantly long.</div><div class="dish-tags"><span class="dish-tag">Premium</span></div></div><div class="dish-price">$420</div></div>
+  </div>
+
+  <p class="menu-foot rev">Please inform your server of any dietary requirements. Prices exclude tax &amp; gratuity.</p>
+</section>
+
+<!-- ═══ EXPERIENCE ════════════════════════════════════════ -->
+<section id="experience" class="section">
+  <div class="exp-head">
+    <div>
+      <div class="eyebrow rev" style="--ember:var(--gold);">Beyond the Plate</div>
+      <h2 class="h2-serif h2-serif-light rev rev-d1">The Complete<br><em>Ember</em> Experience</h2>
+    </div>
+    <p class="body-para body-para-lt rev rev-d2" style="max-width:380px;">From intimate private dining to the legendary Chef's Table — every experience is crafted with the same obsessive attention as our menu.</p>
+  </div>
+  <div class="exp-grid rev">
+    <div class="exp-card">
+      <img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=700&q=80" alt="Private Dining">
+      <div class="exp-grad">
+        <div class="exp-tag">Exclusive</div>
+        <div class="exp-title">Private Dining Rooms</div>
+        <div class="exp-text">Three intimate rooms for corporate events, celebrations, and bespoke dinner parties — each with custom menus and dedicated servers.</div>
+      </div>
+    </div>
+    <div class="exp-card">
+      <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=700&q=80" alt="Wine Cellar">
+      <div class="exp-grad">
+        <div class="exp-tag">800+ Selections</div>
+        <div class="exp-title">The Wine Cellar</div>
+        <div class="exp-text">Old and New World wines across all price points. Our sommelier crafts pairings that transform your meal into a complete sensory journey.</div>
+      </div>
+    </div>
+    <div class="exp-card">
+      <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" alt="Chef's Table">
+      <div class="exp-grad">
+        <div class="exp-tag">6 Seats Only</div>
+        <div class="exp-title">Chef's Table</div>
+        <div class="exp-text">Sit at the pass, watch the brigade, and receive a personalized 10-course tasting menu crafted live by Chef Rivera.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CHEF ═══════════════════════════════════════════════ -->
+<section id="chef" class="section">
+  <div class="chef-wrap">
+    <div class="chef-img-block rev">
+      <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=700&q=80" alt="Chef Marcus Rivera" class="chef-img">
+      <div class="chef-img-frame"></div>
+      <div class="chef-label">Executive Chef · Marcus Rivera</div>
+    </div>
+    <div>
+      <div class="eyebrow rev">The Mind Behind the Menu</div>
+      <h2 class="h2-serif rev rev-d1" style="color:var(--ink);">Chef <em>Marcus Rivera</em></h2>
+      <p class="body-para rev rev-d2">Chef Marcus Rivera grew up in New Orleans, where French technique and American soul food created a lifelong obsession. After training under Alain Ducasse in Paris and Eric Ripert in New York, he returned to the Midwest to build something entirely his own.</p>
+      <blockquote class="chef-quote-block rev rev-d2">"Every ingredient carries a story. My job is to tell it as honestly and beautifully as I can."</blockquote>
+      <p class="body-para rev rev-d3">At Ember &amp; Vine, Rivera has built a kitchen rooted in curiosity, deep respect for the supply chain, and a relentless pursuit of flavor that has earned him national recognition.</p>
+      <div class="chef-awards rev">
+        <span class="chef-aw">★ Michelin Star 2022–2024</span>
+        <span class="chef-aw">James Beard Finalist 2023</span>
+        <span class="chef-aw">Food &amp; Wine Best New Chef</span>
+        <span class="chef-aw">Zagat 30 Under 30</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ RESERVATION ════════════════════════════════════════ -->
+<section id="reserve" class="section">
+  <div class="res-wrap">
+    <div>
+      <div class="eyebrow rev" style="--ember:var(--gold);">Book Your Table</div>
+      <h2 class="h2-serif h2-serif-light rev rev-d1">Reserve Your<br><em>Evening</em></h2>
+      <p class="body-para body-para-lt rev rev-d2">We recommend booking 2–4 weeks ahead for weekend dining. Chef's Table requires 6 weeks minimum.</p>
+      <div class="res-hours rev rev-d3">
+        <div class="res-row"><span class="res-day">Monday</span><span class="res-hr">Closed</span></div>
+        <div class="res-row"><span class="res-day">Tuesday – Thursday</span><span class="res-hr">5:30 PM – 10:00 PM</span></div>
+        <div class="res-row"><span class="res-day">Friday – Saturday</span><span class="res-hr">5:00 PM – 11:00 PM</span></div>
+        <div class="res-row"><span class="res-day">Sunday</span><span class="res-hr">5:00 PM – 9:30 PM</span></div>
+      </div>
+    </div>
+    <div class="rev rev-d2">
+      <div class="f-row">
+        <div class="f-group"><label class="form-label">First Name</label><input class="f-inp" type="text" placeholder="First name"></div>
+        <div class="f-group"><label class="form-label">Last Name</label><input class="f-inp" type="text" placeholder="Last name"></div>
+      </div>
+      <div class="f-row">
+        <div class="f-group"><label class="form-label">Email</label><input class="f-inp" type="email" placeholder="your@email.com"></div>
+        <div class="f-group"><label class="form-label">Phone</label><input class="f-inp" type="tel" placeholder="+1 (312) 000-0000"></div>
+      </div>
+      <div class="f-row">
+        <div class="f-group"><label class="form-label">Date</label><input class="f-inp" type="date"></div>
+        <div class="f-group"><label class="form-label">Time</label>
+          <select class="f-inp"><option>5:30 PM</option><option>6:00 PM</option><option>6:30 PM</option><option>7:00 PM</option><option>7:30 PM</option><option>8:00 PM</option><option>8:30 PM</option><option>9:00 PM</option></select>
+        </div>
+      </div>
+      <div class="f-row">
+        <div class="f-group"><label class="form-label">Party Size</label>
+          <select class="f-inp"><option>1 Guest</option><option>2 Guests</option><option>3 Guests</option><option>4 Guests</option><option>5 Guests</option><option>6 Guests</option><option>7+ Guests (call us)</option></select>
+        </div>
+        <div class="f-group"><label class="form-label">Experience</label>
+          <select class="f-inp"><option>À La Carte Dining</option><option>5-Course Tasting</option><option>Chef's Table (request)</option><option>Private Dining</option></select>
+        </div>
+      </div>
+      <div class="f-group"><label class="form-label">Special Requests</label><textarea class="f-inp f-ta" placeholder="Dietary restrictions, allergies, celebrations..."></textarea></div>
+      <button class="btn-reserve" id="btnReserve">Confirm Reservation &rarr;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GALLERY ════════════════════════════════════════════ -->
+<section id="gallery" class="gallery-section">
+  <div class="gallery-head rev">
+    <div>
+      <div class="gallery-eyebrow"><span class="gallery-line"></span>Visual Journal</div>
+      <h2 class="gallery-title">From Our <em>Kitchen</em></h2>
+    </div>
+    <a href="#contact" class="gallery-link">View Full Gallery &rarr;</a>
+  </div>
+  <div class="gallery-scroll rev">
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3b28?w=450&q=80" alt="dish"></div>
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80" alt="steak"></div>
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=450&q=80" alt="dish"></div>
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400&q=80" alt="pasta"></div>
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1611599538311-c8f4bf709b73?w=450&q=80" alt="dessert"></div>
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=400&q=80" alt="bar"></div>
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=450&q=80" alt="dining room"></div>
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" alt="food close-up"></div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ══════════════════════════════════════ -->
+<section id="testimonials" class="section">
+  <div class="tes-head rev">
+    <div class="eyebrow" style="justify-content:center;">What Our Guests Say</div>
+    <h2 class="h2-serif" style="color:var(--ink);">Stories of <em>Delight</em></h2>
+  </div>
+  <div class="tes-wrap">
+    <div class="tes-card rev">
+      <div class="tes-stars">★★★★★</div>
+      <p class="tes-quote">"The Chef's Table is among the finest dining experiences I've had anywhere in the world. Every course tells a story, every wine pairing is inspired."</p>
+      <div class="tes-author">Amanda Forsythe</div>
+      <div class="tes-src">Chicago Tribune · Food Review</div>
+    </div>
+    <div class="tes-card rev rev-d1">
+      <div class="tes-stars">★★★★★</div>
+      <p class="tes-quote">"Chef Rivera has an extraordinary ability to coax flavors from simple American ingredients. The dry-aged ribeye alone is worth the trip from New York."</p>
+      <div class="tes-author">James Holton</div>
+      <div class="tes-src">Food &amp; Wine Magazine</div>
+    </div>
+    <div class="tes-card rev rev-d2">
+      <div class="tes-stars">★★★★★</div>
+      <p class="tes-quote">"We celebrated our anniversary here and were treated like royalty. The service is warm, the ambiance is magical, every bite was a revelation."</p>
+      <div class="tes-author">Priya &amp; Daniel Mehta</div>
+      <div class="tes-src">Google Review · 5 Stars</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRESS -->
+<div id="press" class="rev">
+  <span class="press-lbl">As Seen In</span>
+  <div class="press-logos">
+    <span class="press-logo">The New York Times</span>
+    <span class="press-logo">Food &amp; Wine</span>
+    <span class="press-logo">Chicago Tribune</span>
+    <span class="press-logo">Bon Appétit</span>
+    <span class="press-logo">Eater Chicago</span>
+    <span class="press-logo">Zagat</span>
+  </div>
+</div>
+
+<!-- ═══ CAREERS ════════════════════════════════════════════ -->
+<section id="careers" class="section">
+  <div class="car-wrap">
+    <div class="car-sticky">
+      <div class="eyebrow rev">Join Our Brigade</div>
+      <h2 class="h2-serif rev rev-d1" style="color:var(--ink);">Work Where <em>Passion</em><br>is the Standard</h2>
+      <p class="body-para rev rev-d2">We seek talented, driven hospitality professionals who believe every guest interaction is an opportunity to create something unforgettable.</p>
+      <div class="perks rev rev-d3">
+        <div class="perk"><div class="perk-ico">🍽️</div><div><div class="perk-t">Staff Dining</div><div class="perk-d">Daily family meal from our kitchen team plus discounts at partner restaurants.</div></div></div>
+        <div class="perk"><div class="perk-ico">📚</div><div><div class="perk-t">Education Stipend</div><div class="perk-d">Annual budget for culinary courses, wine certifications, and industry events.</div></div></div>
+        <div class="perk"><div class="perk-ico">🌿</div><div><div class="perk-t">Full Wellness Cover</div><div class="perk-d">Health &amp; dental, mental health support, and generous time off.</div></div></div>
+        <div class="perk"><div class="perk-ico">🏆</div><div><div class="perk-t">Clear Growth Path</div><div class="perk-d">60% of senior staff promoted internally. Your growth is our mission.</div></div></div>
+      </div>
+    </div>
+    <div class="jobs-stack">
+      <div class="jcard rev"><div class="jcard-title">Sous Chef</div><div class="jcard-meta"><span>📍 Chicago, IL</span><span>⏱ Full-Time</span><span>💰 $75k–$92k</span></div><div class="jcard-desc">Lead the evening brigade alongside Chef Rivera. Min. 5 years fine dining required. Michelin background a strong plus.</div><a href="#contact" class="jcard-apply">Apply Now →</a></div>
+      <div class="jcard rev rev-d1"><div class="jcard-title">Sommelier / Wine Director</div><div class="jcard-meta"><span>📍 Chicago, IL</span><span>⏱ Full-Time</span><span>💰 $68k–$85k + tips</span></div><div class="jcard-desc">Manage our 800-bottle cellar, develop seasonal wine list, lead tableside pairings. WSET Level 3 or CMS Certified required.</div><a href="#contact" class="jcard-apply">Apply Now →</a></div>
+      <div class="jcard rev rev-d2"><div class="jcard-title">Senior Server / Captain</div><div class="jcard-meta"><span>📍 Chicago, IL</span><span>⏱ Full-Time</span><span>💰 $55k–$80k + tips</span></div><div class="jcard-desc">Deliver flawless tableside service with deep product knowledge. Fine dining experience essential.</div><a href="#contact" class="jcard-apply">Apply Now →</a></div>
+      <div class="jcard rev rev-d3"><div class="jcard-title">Pastry Chef de Partie</div><div class="jcard-meta"><span>📍 Chicago, IL</span><span>⏱ Full-Time</span><span>💰 $52k–$65k</span></div><div class="jcard-desc">Create and execute our seasonal pastry program. Min. 3 years fine dining pastry. Chocolate and sugar work essential.</div><a href="#contact" class="jcard-apply">Apply Now →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ════════════════════════════════════════════ -->
+<section id="contact" class="section">
+  <div class="eyebrow rev" style="--ember:var(--gold);">Find Us</div>
+  <h2 class="h2-serif h2-serif-light rev rev-d1">Visit <em>Ember &amp; Vine</em></h2>
+  <div class="con-wrap">
+    <div>
+      <div class="con-map rev">
+        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80" alt="Chicago River North">
+        <div class="con-map-pin"><span>📍</span>River North, Chicago</div>
+      </div>
+      <div class="con-details rev rev-d1">
+        <div class="con-item"><div class="con-ico">📍</div><div><div class="con-lbl">Address</div><div class="con-val">456 N. Wells Street, River North<br>Chicago, IL 60654</div></div></div>
+        <div class="con-item"><div class="con-ico">📞</div><div><div class="con-lbl">Reservations</div><div class="con-val">+1 (312) 555-0241</div></div></div>
+        <div class="con-item"><div class="con-ico">✉️</div><div><div class="con-lbl">Email</div><div class="con-val">hello@emberandvine.com</div></div></div>
+        <div class="con-item"><div class="con-ico">🅿️</div><div><div class="con-lbl">Parking</div><div class="con-val">Valet Fri–Sat from 5 PM<br>Self-park at Wells &amp; Hubbard</div></div></div>
+      </div>
+    </div>
+    <div class="rev rev-d2">
+      <div class="con-form-title">Send Us a Message</div>
+      <div class="f-row">
+        <div class="f-group"><label class="form-label">Name</label><input class="f-inp" type="text" placeholder="Your name"></div>
+        <div class="f-group"><label class="form-label">Email</label><input class="f-inp" type="email" placeholder="your@email.com"></div>
+      </div>
+      <div class="f-group"><label class="form-label">Subject</label>
+        <select class="f-inp"><option>General Inquiry</option><option>Private Event</option><option>Press &amp; Media</option><option>Career Application</option><option>Feedback</option></select>
+      </div>
+      <div class="f-group"><label class="form-label">Message</label><textarea class="f-inp f-ta" placeholder="How can we help you?"></textarea></div>
+      <button class="btn-con" id="btnContact">Send Message &rarr;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">EMBER <span>&amp;</span> VINE</div>
+      <p class="footer-tagline">Modern American fine dining in the heart of Chicago's River North. Celebrating fire, season, and the extraordinary flavors of America.</p>
+    </div>
+    <div>
+      <div class="footer-col-hd">Explore</div>
+      <ul class="footer-links">
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#menu">The Menu</a></li>
+        <li><a href="#chef">Chef Rivera</a></li>
+        <li><a href="#experience">Experiences</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-hd">Visit</div>
+      <ul class="footer-links">
+        <li><a href="#reserve">Reservations</a></li>
+        <li><a href="#experience">Private Dining</a></li>
+        <li><a href="#experience">Chef's Table</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-hd">Connect</div>
+      <ul class="footer-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="#">OpenTable</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <div class="footer-copy">© 2024 Ember &amp; Vine Restaurant Group · All Rights Reserved</div>
+    <div class="footer-soc">
+      <a href="#" class="soc-link">ig</a>
+      <a href="#" class="soc-link">fb</a>
+      <a href="#" class="soc-link">tk</a>
+      <a href="#" class="soc-link">ot</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
